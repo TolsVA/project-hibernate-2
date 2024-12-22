@@ -11,11 +11,6 @@ import com.javaRush.util.SessionUtil;
 public class Main {
 
     public static void main(String[] args) {
-        Main main = new Main();
-        main.run();
-    }
-
-    private void run() {
         SessionUtil sessionUtil = new SessionUtil(HibernateUtil.getSessionFactory());
 
         CustomerService customerService = new CustomerService(sessionUtil);
